@@ -1,0 +1,14 @@
+.headline {
+    font-family: "MADE Sunflower", sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+
+    margin: 0;
+
+    color: var(--dark-brown);
+}
+
+.subheading {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.125rem;
+}

@@ -1,0 +1,17 @@
+@import url('http://fonts.cdnfonts.com/css/made-sunflower');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
+
+:root {
+    --light-green: #C3C5AD;
+    --dark-green: #666C4E;
+
+    --dark-beige: #CBAC81;
+    --light-beige: #E49364;
+
+    --dark-brown: #341E0B;
+    --light-brown: #78502C;
+
+    --light-yellow: #FFF5DB;
+
+    --red: #a35249;
+}

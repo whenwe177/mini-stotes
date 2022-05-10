@@ -1,0 +1,46 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -60%);
+    opacity: 0;
+
+    background-color: var(--light-yellow);
+    border: 5px solid var(--dark-brown);
+    border-radius: 1rem;
+
+    padding: 3rem 2rem;
+
+    z-index: 2;
+
+    transition: all 400ms ease-in-out;
+    pointer-events: none;
+    
+
+}
+
+.modal.show {
+    opacity: 1;
+    transform: translate(50%, -50%);
+    pointer-events: auto;
+}
+
+.modal__cross {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+
+    fill: var(--dark-brown);
+    cursor: pointer;
+}
+
+.form__control {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1rem 0;
+}
+
+.form__control input {
+    font-size: 1.1rem;
+}

@@ -40,7 +40,35 @@
 
     font-family: "Titillium Web", sans-serif;
     color: var(--light-brown);
+
+    transition: color 300ms ease-in-out;
+
+    position: relative;
     
+}
+
+.nav-links a::before {
+    content: "";
+    background-color: var(--dark-brown);
+    
+    height: 2.5px;
+    width: 100%;
+
+    border-radius: 2.5rem;
+
+    position: absolute;
+
+    bottom: -0.15rem;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: all 300ms ease-in-out;
+    
+
+}
+
+.nav-links a:hover::before {
+    transform: scaleX(100%);
 }
 
 

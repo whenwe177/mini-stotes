@@ -12,3 +12,213 @@
     font-family: "Titillium Web", sans-serif;
     font-size: 1.125rem;
 }
+
+.taskboard {
+    position: relative;
+
+    padding: 1rem;
+    
+    background-color: var(--dark-green);
+
+    min-height: 40vh;
+}
+
+.taskboard__handle {
+    width: 85%;
+    
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    background-color: var(--pale-brown);
+}
+
+.taskboard__plaque {
+    position: absolute;
+    top: -10%;
+    right: 50%;
+
+    transform: translateX(50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: var(--light-brown);
+    
+    padding: 0.5rem 2rem;
+
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: white;
+
+    border-radius: 0.25rem;
+}
+
+.taskboard__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notes {
+    background-color: var(--light-yellow);
+    
+    width: clamp(200px, 38%, 210px);
+    min-height: 170px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    box-shadow: -4.44013px 14.2084px 9.7683px rgb(0 0 0 / 25%);
+
+    margin: 1rem;
+    padding: 0.75rem;
+
+    cursor: grab;
+}
+
+.notes__title {
+    margin: 0.75rem;
+    
+    font-family: "MADE Sunflower", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--light-brown);
+
+    text-align: center;
+
+    cursor: text;
+
+    word-wrap: break-word;
+}
+
+.notes__date {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes__date p {
+    margin: 0;
+}
+
+.notes__content {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1rem;
+
+    user-select: none;
+}
+
+.icons {
+    height: 1rem;
+    fill: var(--dark-brown);
+}
+
+.icons--button {
+    cursor: pointer;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: none;
+    border-radius: 0.25rem;
+
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+
+    cursor: pointer;
+}
+
+.button p {
+    margin: 0;
+
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+
+    user-select: none;
+}
+
+.button--spacebetween {
+    margin: 0;
+    padding: 0.25rem 0.75rem;
+    justify-content: space-between;
+}
+
+.button--fill {
+    width: 100%;
+}
+
+.button--green {
+    background: var(--dark-green);
+    fill: white;
+    color: white;
+}
+
+.button--red {
+    background: var(--red);
+    fill: white;
+    color: white;
+}
+
+.notes input[type=text] {
+    background: none;
+    border: none;
+    border-bottom: 1.5px solid var(--dark-brown);
+
+    font-family: "MADE Sunflower", sans-serif;
+    font-size: 1.5rem;
+    color: var(--light-brown);
+
+    transition: all 300ms ease-in-out;
+
+}
+
+.notes input[type=text]:focus-visible {
+    outline: none;
+    border-bottom: 2px solid var(--dark-brown);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+
+    z-index: 1;
+
+    background: rgba(0,0,0,0.4);
+
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+    pointer-events: none;
+}
+
+.overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+input[type=datetime-local],
+input[type=text] {
+    background: none;
+    border-radius: 0.2rem;
+    border: 1.5px solid var(--dark-brown);
+
+    font-family: "Titillium Web", sans-serif;
+
+}
+
+input[type=datetime-local],
+input[type=text] {
+    outline: none;
+}

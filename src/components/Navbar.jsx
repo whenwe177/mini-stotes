@@ -4,7 +4,7 @@ import "../styles/navbar.css"
 
 function Navbar() {
   return (
-    <nav class="navbar">
+    <nav className="navbar">
         <h5 className="logo"><a href="https://very-awesome-projectmanager.herokuapp.com/">Mini-Stotes</a></h5>
         <div className="nav-links">
             <Link to="/"><div className="nav-links__link">My Tasks</div></Link>
